@@ -808,7 +808,7 @@
 <layer>normal</layer>
 <decor>no</decor>
 <position><x>center</x><y>75%</y></position>
-<size><width>100%</width><height>40%</height></size>
+<size><width>100%</width><height>25%</height></size>
 <maximized>Horizontal</maximized>
 </application>
 
