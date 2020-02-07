@@ -90,8 +90,8 @@
     <font place="ActiveOnScreenDisplay">
       <name/>
       <size>8</size>
-      <weight/>
-      <slant/>
+      <weight></weight>
+      <slant></slant>
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Sans</name>
@@ -316,31 +316,38 @@
         <command>qjackctl</command>
       </action>
     </keybind>
-    <keybind key="W-l">
+ <keybind key="W-l">
       <action name="Execute">
         <command>leafpad</command>
       </action>
     </keybind>
-    <keybind key="W-c">
+ <keybind key="W-c">
       <action name="Execute">
         <command>cadence</command>
       </action>
     </keybind>
-    <keybind key="W-t">
+ <keybind key="W-t">
       <action name="Execute">
         <command>thunderbird</command>
       </action>
     </keybind>
-    <keybind key="W-b">
+ <keybind key="W-b">
       <action name="Execute">
         <command>firefox</command>
       </action>
     </keybind>
-    <keybind key="W-z">
+ <keybind key="W-z">
       <action name="Execute">
         <command>telegram-desktop</command>
       </action>
     </keybind>
+ <keybind key="W-s">
+      <action name="Execute">
+        <command>scide</command>
+      </action>
+    </keybind>
+
+  
     <keybind key="C-Escape">
       <action name="Execute">
         <command>lxpanelctl menu</command>
@@ -793,40 +800,7 @@
   </application>
 
   # end of the example
--->
-<application name="Non-Session-Manager">
-<desktop>6</desktop>
-<layer>normal</layer>
-<decor>no</decor>
-<position><x>center</x><y>0</y></position>
-<size><width>100%</width><height>75%</height></size>
-<maximized>Horizontal</maximized>
-</application>
-
-<application name="xterm">
-<desktop>6</desktop>
-<layer>normal</layer>
-<decor>no</decor>
-<position><x>center</x><y>75%</y></position>
-<size><width>100%</width><height>40%</height></size>
-<maximized>Horizontal</maximized>
-</application>
-
-
-
-<application name="Non-Mixer">
-<desktop>5</desktop>
-<layer>normal</layer>
-<decor>yes</decor>
-<maximized>yes</maximized>
-</application>
-
-<application name="Non-Timeline">
-<desktop>4</desktop>
-<layer>normal</layer>
-<decor>yes</decor>
-<maximized>yes</maximized>
-</application>
+--><application name="Non-Session-Manager"><desktop>6</desktop><layer>normal</layer><decor>yes</decor><maximized>yes</maximized></application><application name="Non-Mixer"><desktop>5</desktop><layer>normal</layer><decor>yes</decor><maximized>yes</maximized></application><application name="Non-Timeline"><desktop>4</desktop><layer>normal</layer><decor>yes</decor><maximized>yes</maximized></application>
 
 #non-sequencer
 <application name="non"><desktop>1</desktop><layer>normal</layer><decor>yes</decor><maximized>yes</maximized></application>
@@ -837,5 +811,5 @@
 
 <application name="patchage"><desktop>2</desktop><layer>normal</layer><decor>yes</decor><maximized>yes</maximized></application>
 
-</applications>
+  </applications>
 </openbox_config>
