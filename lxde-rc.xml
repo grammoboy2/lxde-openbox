@@ -254,7 +254,7 @@
       <action name="GrowToEdgeNorth"/>
     </keybind>
     <!-- Move and resize -->
-    <keybind key="W-o">        <!-- MoveResizeTo Left half of screen -->
+    <keybind key="W-k">        <!-- MoveResizeTo Left half of screen -->
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="Raise"/>
@@ -264,7 +264,7 @@
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="W-p">        <!--MoveResizeTo Right half of screen -->
+    <keybind key="W-l">        <!--MoveResizeTo Right half of screen -->
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="Raise"/>
@@ -274,7 +274,7 @@
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="W-9">        <!--MoveResizeTo Top half of screen -->
+    <keybind key="W-i">        <!--MoveResizeTo Top half of screen -->
       <action name="UnmaximizeFull"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
@@ -284,7 +284,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-0">        <!--MoveResizeTo Bottom half of screen -->
+    <keybind key="W-o">        <!--MoveResizeTo Bottom half of screen -->
       <action name="UnmaximizeFull"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
@@ -294,7 +294,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="A-9">        <!--MoveResizeTo Top left quarter -->
+    <keybind key="A-i">        <!--MoveResizeTo Top left quarter -->
       <action name="UnmaximizeFull"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
@@ -304,7 +304,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="A-0">        <!--MoveResizeTo Top right quarter -->
+    <keybind key="A-o">        <!--MoveResizeTo Top right quarter -->
       <action name="UnmaximizeFull"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
@@ -314,7 +314,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="A-o">        <!--MoveResizeTo Bottom left quarter -->
+    <keybind key="A-k">        <!--MoveResizeTo Bottom left quarter -->
       <action name="UnmaximizeFull"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
@@ -324,7 +324,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="A-p">        <!--MoveResizeTo Bottom right quarter -->
+    <keybind key="A-l">        <!--MoveResizeTo Bottom right quarter -->
       <action name="UnmaximizeFull"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
@@ -336,7 +336,7 @@
     </keybind>
         
     <!-- Move windows -->
-    <keybind key="A-i">        <!-- Center window -->
+    <keybind key="A-j">        <!-- Center window -->
       <action name="UnmaximizeFull"/>
       <action name="Raise"/>
       <action name="MoveResizeTo">
@@ -470,6 +470,12 @@
 
 
     <!-- Keybindings for running applications -->
+
+   <keybind key="W-p">
+      <action name="Execute">
+        <command>dmenu_run -nb black</command>
+      </action>
+    </keybind>
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
@@ -504,11 +510,6 @@
     <keybind key="W-q">
       <action name="Execute">
         <command>qjackctl</command>
-      </action>
-    </keybind>
-    <keybind key="W-l">
-      <action name="Execute">
-        <command>leafpad</command>
       </action>
     </keybind>
     <keybind key="W-c">
@@ -989,7 +990,7 @@
 <desktop>1</desktop>
 <layer>normal</layer>
 <decor>yes</decor>
-<maximized>no</maximized>
+<maximized>yes</maximized>
 </application>
 
 <application name="Navigator">
@@ -1017,7 +1018,18 @@
 <maximized>Horizontal</maximized>
 </application>
 
+<application name="leafpad">
+<desktop>2</desktop>
+<layer>normal</layer>
+<decor>no</decor>
+<maximized>no</maximized>
+</application>
 
+<application name="lxterminal">
+<layer>normal</layer>
+<decor>no</decor>
+<maximized>no</maximized>
+</application>
 
 
 <application name="Non-Mixer">
