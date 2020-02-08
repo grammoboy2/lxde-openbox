@@ -167,6 +167,241 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+
+    <keybind key="W-1">
+      <action name="Desktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-2">
+      <action name="Desktop">
+        <desktop>2</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-3">
+      <action name="Desktop">
+        <desktop>3</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-4">
+      <action name="Desktop">
+        <desktop>4</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-5">
+      <action name="Desktop">
+        <desktop>5</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-6">
+      <action name="Desktop">
+        <desktop>6</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+
+   <!-- 
+<keybind key="C-A-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+-->
+    <!-- Keybindings for windows -->
+    <keybind key="A-F4">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-Escape">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
+    </keybind>
+    <keybind key="A-space">
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
+    </keybind>
+    <!-- Keybindings for window switching edit dirk -->
+    <keybind key="A-Right">
+      <action name="NextWindow"/>
+    </keybind>
+    <keybind key="A-Left">
+      <action name="PreviousWindow"/>
+    </keybind>
+    <keybind key="C-A-Tab">
+      <action name="NextWindow">
+        <panels>yes</panels>
+        <desktop>yes</desktop>
+      </action>
+    </keybind>
+
+
+#https://github.com/capn-damo/Openbox-tiling
+
+
+    <!-- "Tiling" keybinds -->
+    <!-- Grow to edge -->
+    <keybind key="C-Right">
+      <action name="GrowToEdgeEast"/>
+    </keybind>
+    <keybind key="C-Left">
+      <action name="GrowToEdgeWest"/>
+    </keybind>
+    <keybind key="C-Down">
+      <action name="GrowToEdgeSouth"/>
+    </keybind>
+    <keybind key="C-Up">
+      <action name="GrowToEdgeNorth"/>
+    </keybind>
+    <!-- Move and resize -->
+    <keybind key="W-o">        <!-- MoveResizeTo Left half of screen -->
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+        <x>0</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-p">        <!--MoveResizeTo Right half of screen -->
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <width>50%</width>
+        <x>50%</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-9">        <!--MoveResizeTo Top half of screen -->
+      <action name="UnmaximizeFull"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-0">        <!--MoveResizeTo Bottom half of screen -->
+      <action name="UnmaximizeFull"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>50%</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="A-9">        <!--MoveResizeTo Top left quarter -->
+      <action name="UnmaximizeFull"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="A-0">        <!--MoveResizeTo Top right quarter -->
+      <action name="UnmaximizeFull"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="A-o">        <!--MoveResizeTo Bottom left quarter -->
+      <action name="UnmaximizeFull"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>50%</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="A-p">        <!--MoveResizeTo Bottom right quarter -->
+      <action name="UnmaximizeFull"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>50%</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+        
+    <!-- Move windows -->
+    <keybind key="A-i">        <!-- Center window -->
+      <action name="UnmaximizeFull"/>
+      <action name="Raise"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+        <width>current</width>
+        <height>current</height>
+      </action>
+    </keybind>
+    
+    <keybind key="W-A-Right">         <!-- Move to Right edge -->
+      <action name="MoveToEdge">
+        <direction>east</direction>
+      </action>
+    </keybind>
+    <keybind key="W-A-Left">          <!-- Move to Left edge -->
+      <action name="MoveToEdge">
+        <direction>west</direction>
+      </action>
+    </keybind>
+    <keybind key="W-A-Up">            <!-- Move to Top edge -->
+      <action name="MoveToEdge">
+        <direction>north</direction>
+      </action>
+    </keybind>
+    <keybind key="W-A-Down">          <!-- Move to Bottom edge -->
+      <action name="MoveToEdge">
+        <direction>south</direction>
+      </action>
+    </keybind>
+    
+    <!-- Move to corner -->
+    <keybind key="W-A-9">    <!-- put the window in the top right corner -->
+      <action name="Raise"/>
+      <action name="MoveResizeTo"> 
+        <x>-0</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-A-8">    <!-- put the window in the bottom right corner -->
+      <action name="Raise"/>
+      <action name="MoveResizeTo"> 
+        <x>-0</x>
+        <y>-0</y>
+      </action>
+    </keybind>
+    <keybind key="W-A-7">    <!-- put the window in the bottom left corner -->
+      <action name="Raise"/>
+      <action name="MoveResizeTo"> 
+        <x>0</x>
+        <y>-0</y>
+      </action>
+    </keybind>
+    <keybind key="W-A-6">    <!-- put the window in the top left corner -->
+      <action name="Raise"/>
+      <action name="MoveResizeTo"> 
+        <x>0</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    
+
+
+
+
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
       <action name="DesktopLeft">
@@ -216,69 +451,24 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-1">
-      <action name="Desktop">
-        <desktop>1</desktop>
-      </action>
+
+
+
+
+  <keybind key="W-space">
+      <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="W-2">
-      <action name="Desktop">
-        <desktop>2</desktop>
-      </action>
+    <keybind key="W-v">
+      <action name="Iconify"/>
     </keybind>
-    <keybind key="W-3">
-      <action name="Desktop">
-        <desktop>3</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-4">
-      <action name="Desktop">
-        <desktop>4</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-5">
-      <action name="Desktop">
-        <desktop>5</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-6">
-      <action name="Desktop">
-        <desktop>6</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
-    <keybind key="C-A-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
-    <!-- Keybindings for windows -->
-    <keybind key="A-F4">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="A-Escape">
-      <action name="Lower"/>
-      <action name="FocusToBottom"/>
-      <action name="Unfocus"/>
-    </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
-    </keybind>
-    <!-- Keybindings for window switching edit dirk-->
-    <keybind key="A-Right">
-      <action name="NextWindow"/>
-    </keybind>
-    <keybind key="A-Left">
-      <action name="PreviousWindow"/>
-    </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
-      </action>
-    </keybind>
+
+
+
+
+
+
+
+
     <!-- Keybindings for running applications -->
     <keybind key="W-e">
       <action name="Execute">
@@ -794,8 +984,23 @@
 
   # end of the example
 -->
+
+<application name="Mail">
+<desktop>1</desktop>
+<layer>normal</layer>
+<decor>yes</decor>
+<maximized>no</maximized>
+</application>
+
+<application name="Navigator">
+<desktop>1</desktop>
+<layer>normal</layer>
+<decor>yes</decor>
+<maximized>yes</maximized>
+</application>
+
 <application name="Non-Session-Manager">
-<desktop>6</desktop>
+<desktop>8</desktop>
 <layer>normal</layer>
 <decor>no</decor>
 <position><x>center</x><y>0</y></position>
@@ -804,13 +1009,14 @@
 </application>
 
 <application name="xterm">
-<desktop>6</desktop>
+<desktop>8</desktop>
 <layer>normal</layer>
 <decor>no</decor>
 <position><x>center</x><y>75%</y></position>
 <size><width>100%</width><height>25%</height></size>
 <maximized>Horizontal</maximized>
 </application>
+
 
 
 
