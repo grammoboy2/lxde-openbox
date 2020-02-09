@@ -347,50 +347,50 @@
       </action>
     </keybind>
     
-    <keybind key="W-A-Right">         <!-- Move to Right edge -->
+    <keybind key="S-A-Right">         <!-- Move to Right edge -->
       <action name="MoveToEdge">
         <direction>east</direction>
       </action>
     </keybind>
-    <keybind key="W-A-Left">          <!-- Move to Left edge -->
+    <keybind key="S-A-Left">          <!-- Move to Left edge -->
       <action name="MoveToEdge">
         <direction>west</direction>
       </action>
     </keybind>
-    <keybind key="W-A-Up">            <!-- Move to Top edge -->
+    <keybind key="S-A-Up">            <!-- Move to Top edge -->
       <action name="MoveToEdge">
         <direction>north</direction>
       </action>
     </keybind>
-    <keybind key="W-A-Down">          <!-- Move to Bottom edge -->
+    <keybind key="S-A-Down">          <!-- Move to Bottom edge -->
       <action name="MoveToEdge">
         <direction>south</direction>
       </action>
     </keybind>
     
     <!-- Move to corner -->
-    <keybind key="W-A-9">    <!-- put the window in the top right corner -->
+    <keybind key="S-A-o">    <!-- put the window in the top right corner -->
       <action name="Raise"/>
       <action name="MoveResizeTo"> 
         <x>-0</x>
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="W-A-8">    <!-- put the window in the bottom right corner -->
+    <keybind key="S-A-l">    <!-- put the window in the bottom right corner -->
       <action name="Raise"/>
       <action name="MoveResizeTo"> 
         <x>-0</x>
         <y>-0</y>
       </action>
     </keybind>
-    <keybind key="W-A-7">    <!-- put the window in the bottom left corner -->
+    <keybind key="S-A-k">    <!-- put the window in the bottom left corner -->
       <action name="Raise"/>
       <action name="MoveResizeTo"> 
         <x>0</x>
         <y>-0</y>
       </action>
     </keybind>
-    <keybind key="W-A-6">    <!-- put the window in the top left corner -->
+    <keybind key="S-A-i">    <!-- put the window in the top left corner -->
       <action name="Raise"/>
       <action name="MoveResizeTo"> 
         <x>0</x>
