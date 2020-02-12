@@ -334,6 +334,8 @@
         <height>50%</height>
       </action>
     </keybind>
+
+
         
     <!-- Move windows -->
     <keybind key="A-j">        <!-- Center window -->
@@ -1021,13 +1023,14 @@
 <application name="leafpad">
 <desktop>2</desktop>
 <layer>normal</layer>
-<decor>no</decor>
+<decor>yes</decor>
 <maximized>no</maximized>
 </application>
 
 <application name="lxterminal">
 <layer>normal</layer>
-<decor>no</decor>
+<decor>yes</decor>
+<size><width>50%</width><height>52%</height></size>
 <maximized>no</maximized>
 </application>
 
@@ -1047,13 +1050,33 @@
 </application>
 
 #non-sequencer
-<application name="non"><desktop>1</desktop><layer>normal</layer><decor>yes</decor><maximized>yes</maximized></application>
+<application name="non">
+<desktop>1</desktop>
+<layer>normal</layer>
+<decor>yes</decor>
+<maximized>yes</maximized>
+</application>
 
-<application name="ZynAddSubFX 3.0.5"><desktop>1</desktop><layer>normal</layer><decor>yes</decor><maximized>no</maximized></application>
+<application name="ZynAddSubFX 3.0.5">
+<desktop>1</desktop>
+<layer>normal</layer>
+<decor>yes</decor>
+<maximized>no</maximized>
+</application>
 
-<application name="carla"><desktop>3</desktop><layer>normal</layer><decor>yes</decor><maximized>yes</maximized></application>
+<application name="carla">
+<desktop>3</desktop>
+<layer>normal</layer>
+<decor>yes</decor>
+<maximized>yes</maximized>
+</application>
 
-<application name="patchage"><desktop>2</desktop><layer>normal</layer><decor>yes</decor><maximized>yes</maximized></application>
+<application name="patchage">
+<desktop>2</desktop>
+<layer>normal</layer>
+<decor>yes</decor>
+<maximized>yes</maximized>
+</application>
 
 </applications>
 </openbox_config>
