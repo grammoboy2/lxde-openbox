@@ -473,7 +473,7 @@
 
     <!-- Keybindings for running applications -->
 
-   <keybind key="W-S-p">
+   <keybind key="A-S-p">
       <action name="Execute">
         <command>dmenu_run -nb black</command>
       </action>
